@@ -1,4 +1,5 @@
 import React, {useState}  from "react";
+import BaceHoc from "../hoc/BaceHoc";
 
 const FunctionalComponents = ({name , age, author, setName}) =>{
     const [count, setCount] = useState(0);
@@ -22,4 +23,4 @@ const FunctionalComponents = ({name , age, author, setName}) =>{
     )
 }
 
-export default FunctionalComponents;
+export default BaceHoc(FunctionalComponents);
